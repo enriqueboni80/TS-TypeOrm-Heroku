@@ -1,10 +1,6 @@
-{
+module.exports = {
   "type": "postgres",
-  "host": "localhost",
-  "port": 5433,
-  "username": "postgres",
-  "password": "docker",
-  "database": "mussum",
+  "url": process.env.DATABASE_URL,
   "entities": [
     "src/models/**/*.ts"
  ],
