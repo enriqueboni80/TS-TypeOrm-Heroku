@@ -6,6 +6,7 @@ import ClassRepository from '../repositories/ClassRepository';
 const classRouter = Router();
 
 classRouter.post('/', async (request, response) => {
+  console.log(request.body)
   try {
     const repo = getRepository(Class);
     const res = await repo.save(request.body);
